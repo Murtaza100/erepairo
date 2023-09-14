@@ -1,0 +1,23 @@
+package com.stackroute.userService.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.stackroute.userService.collection.User;
+import com.stackroute.userService.service.UserService;
+
+@RestController
+@RequestMapping("/erepairo/user")
+public class UserController {
+
+	@Autowired
+	UserService userService;
+	
+	public ResponseEntity<User> getUserById(@PathVariable("id") String id){
+		return new ResponseEntity<User>(this.userService.getUserById(id), HttpStatus.OK);
+	}
+}

@@ -1,0 +1,5 @@
+package com.stackroute.userService.service;
+
+public class UserServiceImpl implements UserService {
+
+}

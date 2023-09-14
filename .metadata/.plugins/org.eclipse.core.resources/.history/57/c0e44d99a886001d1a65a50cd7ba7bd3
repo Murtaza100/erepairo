@@ -1,0 +1,18 @@
+package com.stackroute.userService.collection;
+
+import java.util.List;
+
+public class User {
+
+	private String userId;
+	private String firstName;
+	private String lastName;
+	private String password;
+	private String contactNo;
+	private String alternateContactNo;
+	private String emailId;
+	private Address address;
+//	private List<Product> products;
+//	private Role role;
+	
+}

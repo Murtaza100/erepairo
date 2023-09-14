@@ -1,0 +1,13 @@
+package com.stackroute.userService.service;
+
+import com.stackroute.userService.collection.User;
+
+public interface UserService {
+
+	User getUserById(String id);
+
+	User updateUserById(String id, User user);
+
+	User addUser(User user);
+
+}

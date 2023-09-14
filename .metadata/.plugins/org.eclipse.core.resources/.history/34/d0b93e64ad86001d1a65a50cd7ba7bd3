@@ -1,0 +1,5 @@
+package com.stackroute.userService.controller;
+
+public class UserController {
+
+}

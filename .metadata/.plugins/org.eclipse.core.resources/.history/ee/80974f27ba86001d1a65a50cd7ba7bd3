@@ -1,0 +1,31 @@
+package com.stackroute.userService.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.stackroute.userService.collection.User;
+import com.stackroute.userService.repository.UserRepository;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Autowired
+	UserRepository userRepository;
+	
+	@Override
+	public User getUserById(String id) {
+		return userRepository.findById(id).get();
+	}
+
+	@Override
+	public User updateUserById(String id, User user) {
+		userRepository.findById(id).get();
+		return userRepository.save(user);
+	}
+
+	@Override
+	public User addUser(User user) {
+		return userRepository.save(user);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.stackroute.userService.collection;
+
+public class user {
+
+}

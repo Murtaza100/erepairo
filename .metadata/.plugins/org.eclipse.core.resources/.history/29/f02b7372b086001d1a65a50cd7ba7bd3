@@ -1,0 +1,22 @@
+package com.stackroute.userService.service;
+
+import org.springframework.stereotype.Service;
+
+import com.stackroute.userService.collection.User;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public User getUserById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User updateUserById(String id, User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
